@@ -1,11 +1,11 @@
 import React from 'react'
-
+import Link from 'next/link'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {HiOutlineMail} from 'react-icons/hi'
 
 const AlwaysInDisplay = () => {
   return (
-    <div className='flex fixed mt-0 w-screen justify-between items-center p-3 bg-slate-600 '>
+    <div className='z-10 flex fixed mt-0 w-screen justify-between items-center p-3 bg-slate-600 '>
       <div className='hidden md:block' >
         <ul className='flex justify-center items-center'>
           <BsFillTelephoneFill />
@@ -19,7 +19,9 @@ const AlwaysInDisplay = () => {
           <li className='hover:text-[#88b1ca]'>info@school.com.np </li>
         </ul>
       </div>
-      <div className='mx-1 cursor-pointer hover:text-[#88b1ca]'>check login</div>
+      <div className='mx-1 cursor-pointer hover:text-[#88b1ca]'>
+        <Link href='/login'>Login</Link>
+        </div>
     </div>
   )
 }
