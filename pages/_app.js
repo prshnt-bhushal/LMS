@@ -5,7 +5,7 @@ import FooterSection from '@/components/FooterSection'
 
 export default function App({ Component, pageProps }) {
   return <>
-    <AlwaysInDisplay/>
+    {/* <AlwaysInDisplay/> */}
     <NavBar/>
     <Component {...pageProps}/> 
     <FooterSection/>
